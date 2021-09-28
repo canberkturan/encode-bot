@@ -74,7 +74,7 @@ def error(update, context):
 
 def main():
     """Start the bot."""
-    updater = Updater("{telegram_api_token}", use_context=True)
+    updater = Updater("TELEGRAM_API_TOKEN", use_context=True)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("help", help))
